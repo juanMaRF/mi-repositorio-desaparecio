@@ -1,0 +1,108 @@
+\documentclass[11pt]{article}
+
+% Character set for input and output
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% Fonts
+\usepackage{libertine}
+\usepackage[scaled=0.83]{beramono}
+
+% AMS math-packages
+\usepackage{amssymb}
+\usepackage{amsmath,amsthm}
+
+% TODO in text
+\usepackage{todonotes}
+
+% URL (clickable), references within document, etc./
+\usepackage{hyperref}
+
+% Code formatting
+\usepackage{listings}
+\lstset{
+   language=java,
+   extendedchars=true,
+   basicstyle=\footnotesize\ttfamily,
+   showstringspaces=false,
+   showspaces=false,
+   numbers=left,
+   numberstyle=\footnotesize,
+   numbersep=9pt,
+   tabsize=2,
+   breaklines=true,
+   showtabs=false,
+   frame=single,
+   extendedchars=false,
+   inputencoding=utf8,
+   captionpos=b
+}
+
+% Text / Paragraph space
+\addtolength{\textwidth}{1.5cm}
+\addtolength{\hoffset}{-0.5cm}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1.5ex plus 1ex minus 1ex}
+
+\title{El nacimiento de la computación moderna}
+\author{{\Large Autor}\\Juan Manuel Rivera Florez\\
+        \href{mailto:juanm.rivera@udea.edu.co}{\texttt{juanm.rivera@udea.edu.co}}}
+\date{27 Marzo 2020}
+%\date{December 14, 2019}
+
+\begin{document}
+
+\maketitle
+
+
+%
+A día de hoy la mayoría de las personas nos hemos acostumbrado a tener un computador, un celular o cualquier dispositivo “inteligente” y esto es gracias a su utilidad y a su fácil e intuitivo manejo y gracias a esto se nos facilita muchas actividades diarias. Pero aunque su uso pueda llegar a ser fácil, internamente el dispositivo está realizando múltiples acciones que en cierta medida pueden llegar a ser complicadas de entender, pero cómo y con qué pensamiento crearon la primera máquina “inteligente”. 
+%
+\\
+\\
+%
+Las matemáticas fueron el comienzo de la computación ya que eran precisas, pero a finales del siglo XIX empezaron a surgir unos problemas relacionados con el infinito. 
+%
+\section*{El infinito}
+%
+Georg Cantor, fue uno de los creadores de la teoría de los conjuntos, concluyendo que hay infinitos de distintos tamaños, los matemáticos rechazaron estas ideas y Cantor empezó a dudar  de si mismo y sufrió varias crisis nerviosas, hasta morir en un psiquiátrico.
+%
+\\\\
+Para Cantor los conjuntos eran una colección de finitos o infinitos elementos, y así estableció el concepto de cardinal, como el número de elementos que tiene un conjunto, y por ejemplo el cardinal del conjunto de los dedos de la mano es cinco, pero el conjunto de los números naturales es infinito, pero Cantor se dio cuenta de que no todos los conjuntos infinitos son del mismo tamaño, no todos los conjuntos infinitos tienen el mismo número de elementos. Cantor comprobó que el conjunto de los números naturales tiene el mismo cardinal, es decir, el mismo infinito que el conjunto de los números primos haciendo uso de una función biunívoca. Cantor también probó que es imposible hacer una función biunívoca entre el conjunto de los naturales y el conjunto de puntos que conforman una recta real, y así llegó a la conclusión de que el cardinal del conjunto de números reales es mayor al del conjunto de números naturales (son infinitos de distintos tamaños). Al infinito más pequeño (el conjunto de los números naturales) lo llamó alef 0 y a los siguientes los llamo alef 1, alef 2, etc. A el conjunto de estos cardinales infinitos se conocen por el nombre de cardinales transfinitos.
+%
+\\\\
+%
+Georg Cantor queriendo establecer resultados mayores a alef 0 y alef 1, llegó a considerar un conjunto con todos los alef (el conjunto de todos los conjuntos) y entonces vio cómo se obtiene una contradicción empleando el teorema de Cantor (dado un conjunto C, existe un conjunto p(C) de mayor cardinalidad). Pero el conjunto de todos los conjuntos debe incluirlo como un subconjunto propio, por lo cual el conjunto potencia es y no es mayor que su propio conjunto.
+%
+\\\\
+%
+Luego de esta paradoja a inicios del siglo XX nació la llamada crisis de los fundamentos, la cual concluyó de las matemáticas no eran infalibles. Kurt Gödel y Alan Turing fueron los que se encargaron de encontrar estas limitaciones.
+%
+
+\section*{Crisis de los fundamentos}
+
+Esta crisis vino a raíz de que al axiomatizar las matemáticas desde la teoría de los conjuntos surgen nuevos problemas. Son unas proposiciones o teoremas cuya validez se cuestiona, tales como: El axioma de elección el cual es equivalente al teorema de zermelo, La hipótesis del continuo de Cantor. Godel en 1938 probó que la hipótesis del continuo es consistente con la Axiomática conjuntista (Zermelo-Frenkel). Cohen en 1963 probó que también lo es su negación, al igual que el axioma de elección.
+\\\\
+Godel demostró complejamente su teorema de la incompletitud, que dio pie a el programa de Hilbert. De ahí Hilbert había pasado a considerar que lo verdadero es lo demostrable, que la verdad reside en la corrección lógica. Esto los condujo a un desarrollo puramente simbólico de las matemáticas. Desde esta perspectiva formalista, a partir del teorema de Godel, hay infinitas proposiciones que no son verdaderas ni falsas. La demostración de Godel marcó un punto importante en las matemáticas.
+\\\\
+%
+Alan Turing encargado de seguir con el legado de Godel (conocido por su participación en la segunda guerra mundial con la máquina enigma), demostró que hay problema que no tienen solucion y ademas de eso, tampoco podemos saber cuales son. Turing usando un razonamiento como el de Godel para resolver el llamado “problema de decisión” afirmó que no siempre se puede resolver un problema aleatorio con un número finito de pasos.
+\\\\
+%
+En su demostración probó que hay problemas que no tienen computacion, por eso pensó en una máquina universal que tuviera una efectiva computación estricta. En realidad no era una maquina, solo era una tira de papel con unas casillas que se rellenan con ceros o unos y un escáner que leyera las casillas, las borra o cambia la información, y unas instrucciones que pueden cambiar su funcionamiento, y estos funcionamientos pueden resolver cualquier tarea algorítmica. Esa fue la forma en que comenzó la programación.
+\\\\
+%
+Concluyendo sabemos que las matemáticas han sido de mucha ayuda para dar pie a la computación moderna, que no solo se compuso de ceros y unos, comenzó por unas paradojas, contradicciones y para resolver problemas que solucionandolos a mano tendrían una cantidad de pasos exagerados, y aquí es donde la computación nos ahorra esos pasos. También se puede concluir la complejidad de los pensamientos de G. Cantor, Kurt Godel, Alan Turing y David Hilbert, que mientras ellos decían sus pensamientos el resto no los aceptaban.  
+%
+\subsection*{Referencia}
+%
+\begin{itemize}
+    \item J.M. Sorando Muzas. SIGLO XX: CRISIS EN LOS FUNDAMENTOS  (1ra ed.) [Online] Available: \url{http://matematicasentumundo.es/HISTORIA/historia_XX_Fundamentos.htm}
+    \item B. Garcia Visos, D. Arias Mosquera. (2019, Mar 29) Georg Cantor, el hombre que descubrió distintos infinitos (1ra ed.)[Online] Available: \url{https://www.bbvaopenmind.com/ciencia/matematicas/georg-cantor-el-hombre-que-descubrio-distintos-infinitos/}
+    \item J.C. Londoño (2007, Jun.27) La máquina universal de Turing (28va ed.)[Online] Available: \url{https://elclavo.com/articulos/opinion/la-maquina-universal-de-turing/}
+    \item N.Maestre, Á.Timón (2018, Sep.20) Así terminó el sueño de las matemáticas infalibles (y de paso, nació la computación moderna). (1ra ed.)[Online] Available: \url{https://www.bbvaopenmind.com/ciencia/matematicas/asi-termino-el-sueno-de-las-matematicas-infalibles/}
+    \item \url{https://www.youtube.com/watch?v=iaXLDz_UeYY}// Jesús Ruiz, Universidad politécnica de valencia 
+
+\end{itemize}
+
+\end{document}
